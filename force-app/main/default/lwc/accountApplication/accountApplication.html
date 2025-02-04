@@ -1,0 +1,137 @@
+<template>
+
+    <lightning-card title="New Account Applications" class="slds-p-around_medium">
+        <div class="instructions">
+            <h2 class="slds-text-heading_medium">Start a new application journey</h2>
+            <p>Please select which account you want to apply for:</p>
+        </div>
+        <div class="actions">
+            <lightning-button
+                label="Start Application"
+                icon-name="utility:chevronright"
+                icon-position="right"
+                variant="neutral"
+                onclick={startApplication}
+            ></lightning-button>
+        </div>
+
+    <div class="account-container slds-grid slds-wrap slds-grid_pull-padded slds-p-around_medium">
+        
+            <template for:each={accounts} for:item="account">
+                
+                <div key={account.id}>
+                <div class="slds-col slds-size_1-of-4">
+                    
+                    <div
+                        class={account.className}
+                        onclick={handleSelection}
+                        data-id={account.id}
+                    >
+                    <div class="colors" data-id={account.id}></div>
+                    <!-- <div>
+                        <lightning-input
+                            class="inputs"
+                            type="radio"
+                            label=""
+                            name="accountSelection"
+                            value={account.id}
+                            checked={account.selected}
+                            onchange={handleRadioChange}
+                        ></lightning-input>
+                    </div> -->
+                    <div class="slds-radio">
+                        <input
+                            type="radio"
+                            name="accountSelection"
+                            class="custom-radio-input"
+                           value={account.id}
+                            checked={account.selected}
+                            onchange={handleRadioChange}
+                            />
+                            <span class="custom-radio"></span>
+                        <!-- <lightning-input
+                          class="inputs"
+                          type="radio"
+                          name="accountSelection"
+                          value={account.id}
+                          checked={account.selected}
+                          onchange={handleRadioChange}
+                        ></lightning-input> -->
+                        <!-- <span class="slds-radio_faux custom-faux"></span> -->
+                      </div>
+                        <div class="header">
+                            <!-- <span
+                                class="badge"
+                                style="background-color: {account.badgeColor}"
+                            ></span> -->
+                            <h3 class="slds-text-heading_small">
+                                <strong>{account.name}</strong>
+                            </h3>
+                        </div>
+                        <p>{account.description}</p>
+                        <p class="supported-currencies">
+                            Supported currencies: {account.currencies}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </template>
+        
+    </div>
+
+        
+    </lightning-card>
+
+    <!-- <lightning-card title="New Account Applications">
+    <div class="instructions">
+    <h2>Start a new application journey</h2>
+    <p>Please select which account you want to apply for:</p>
+    </div>
+                <div class="actions">
+                    <lightning-button
+                    label="Start Application"
+                    icon-name="utility:chevronright"
+                    icon-position="right"
+                    variant="brand"
+                    onclick={startApplication}
+                   
+                    ></lightning-button>
+            </div>
+            <div class="account-container">
+                <template for:each={accounts} for:item="account">
+                   
+                <div
+                        key={account.id}
+                        class={account.className}
+                        onclick={handleSelection}
+                        data-id={account.id}
+                    >
+                    <lightning-input
+                            class="inputs"
+                            type="radio"
+                            label=""
+                            name="accountSelection"
+                            value={account.id}
+                            checked={account.selected}
+                            onchange={handleRadioChange}
+                        ></lightning-input>
+        <div class="header slds-align_absolute-right">
+           
+                     <span
+                        class="badge"
+                        style="background-color: {account.badgeColor}"
+                    ></span> 
+                        <h3><strong>{account.name}</strong></h3>
+        </div>
+                    <p>{account.description}</p>
+                    <p class="supported-currencies">
+                            Supported currencies: {account.currencies}
+    </p>
+                       
+    </div>
+    </template>
+    </div>
+     
+           
+    </lightning-card> -->
+    </template>

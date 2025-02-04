@@ -1,0 +1,29 @@
+/* Add tilt effect for hover */
+.slds-box:hover {
+    transform: rotateY(10deg);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+.slds-box{
+    height: 180px;
+    text-align: left;
+    width: auto;
+    border-radius: 5px;
+}
+.slds-text-heading_small {
+  color:grey;
+  font-size: smaller;
+}
+.slds-text-heading_medium {
+    color: black;
+}
+.slds-text-body_regular{
+    color:grey;
+    font-size: smaller;  
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}

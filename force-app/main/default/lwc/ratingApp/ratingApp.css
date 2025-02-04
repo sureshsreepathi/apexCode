@@ -1,0 +1,45 @@
+
+/* review  */
+.slds-box {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height:230px
+}
+
+.slds-media__figure img {
+    width: 48px;
+    height: 48px;
+}
+
+.star-icon {
+    --sds-c-icon-color-foreground-default: orange;
+}
+.new{
+    position: relative;
+    top: 30px;
+} 
+.newcss{
+    position: absolute;
+    top: 570px;
+}
+
+/* .new-card{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 250px;
+    width:200px;
+    border:2px solid black;
+}
+.parent{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 600;
+    width:10;
+    border:2px solid black;
+}
+.child{
+    background-color: blue;
+    height: 600px;
+    width: 100px;
+} */

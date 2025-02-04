@@ -1,0 +1,28 @@
+.custom-radio .slds-radio_faux {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #0070d2; /* Border color */
+    border-radius: 50%; /* Make it circular */
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .custom-radio input[type="radio"]:checked + .slds-radio_faux {
+    background-color: #0070d2; /* Fill color for the selected state */
+  }
+  
+  .custom-radio input[type="radio"]:checked + .slds-radio_faux::after {
+    content: "✔"; /* Unicode tick mark */
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    align-self: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -40%);
+    font-weight: bold;
+  }
+  

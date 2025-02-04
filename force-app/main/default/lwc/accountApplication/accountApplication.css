@@ -1,0 +1,135 @@
+
+.custom-radio-input {
+    display: none;
+    
+  }
+
+  .custom-radio {
+    display: inline-block;
+    left: 240px; 
+    width: 20px;
+    height: 20px;
+    border: 2px solid #005eff;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+  }
+  .custom-radio-input:checked + .custom-radio::after {
+    content: '✔';
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #005eff;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+/* .inputs{
+    padding-left: 90%;
+  }
+  /* Radio css 
+  .custom-radio .custom-faux {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #0070d2;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .custom-radio .inputs:checked + .custom-faux {
+    background-color: #0070d2;
+    border-color: #0070d2;
+  }
+  
+  .custom-radio .inputs:checked + .custom-faux::after {
+    content: "✔";
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+ /* Radio css     */
+  .account-container {
+      display: flex;
+      gap: 5px;
+  } 
+  .colors{
+    border: 3px;
+    position: absolute;
+  /* background-color:blue; */
+  border-top-left-radius: 10px;
+  /* border-end-end-radius: 30px; */
+  width: 100px;
+  height: 20px;
+  top:0px;
+  right:200px;
+  } 
+   
+  .account-card {
+      border: 1px solid #ccc;
+      background-color:ghostwhite;
+      border-radius: 8px;
+      padding: 16px;
+      width: 300px;
+      position: relative;
+      height: 300px;
+      cursor: pointer;
+      /* box-sizing: border-box; */
+      transition: box-shadow 0.2s ease-in-out;
+  }
+   
+  .account-card.selected {
+      /* box-shadow: 0 0 8px #0070d2; */
+      border-color: #0070d2;
+  }
+   
+  .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      
+  }
+   
+  /* .badge {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 8px;
+  } */
+   
+  .supported-currencies {
+      font-size: 0.9rem;
+      color: #666;
+  }
+   
+  .actions {
+      /* margin-top: 10px; */
+      /* margin-bottom: 15px; */
+      padding-left: 80%;
+      
+  }
+  
+  .instructions,h2,p{
+      padding: 5px;
+  }
+  /* #optimum{
+    padding-bottom: 30px;
+  } */
+
+  /* #optimum{
+    
+  } */
