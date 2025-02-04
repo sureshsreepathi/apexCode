@@ -23,4 +23,3 @@ public class ApexCalculation {
 
     }
 }
-ApexCalculation.Calculator('Addition',3,5);
